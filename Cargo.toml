@@ -7,3 +7,10 @@ members = [
     "examples",
     "tests/h3-tests",
 ]
+
+[patch.crates-io]
+yasna.path = "../../qnighy/yasna.rs"
+quinn.path = "../../quinn-rs/quinn/quinn"
+quinn-udp.path = "../../quinn-rs/quinn/quinn-udp"
+quinn-proto.path = "../../quinn-rs/quinn/quinn-proto"
+tracing-subscriber.path = "../../tokio-rs/tracing/tracing-subscriber"

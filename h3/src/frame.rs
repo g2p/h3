@@ -491,7 +491,7 @@ mod tests {
         // grease with some data
         crate::proto::frame::FrameType::grease().encode(&mut buf);
         buf.write_var(6);
-        buf.put_slice(b"grease");
+        buf.put_slice(b"greas2");
 
         // Body
         Frame::Data(Bytes::from("body")).encode_with_payload(&mut buf);

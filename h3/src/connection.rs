@@ -724,7 +724,7 @@ where
     }
 
     pub async fn finish(&mut self) -> Result<(), Error> {
-        if self.send_grease_frame {
+        if self.send_grease_frame && false {
             // send a grease frame once per Connection
             stream::write(&mut self.stream, Frame::Grease)
                 .await

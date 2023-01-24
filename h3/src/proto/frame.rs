@@ -127,7 +127,7 @@ where
             Frame::Grease => {
                 FrameType::grease().encode(buf);
                 buf.write_var(6);
-                buf.put_slice(b"grease");
+                buf.put_slice(b"greas1");
             }
         }
     }
